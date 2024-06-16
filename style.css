@@ -1,0 +1,1068 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.black a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-family: 'Golos Text', sans-serif;
+}
+.white a{
+    text-decoration: none;
+    color:#1F1F1F;
+    font-size: 16px;
+    font-family: 'Golos Text', sans-serif;
+}
+
+header .main-content .black a:hover {
+    color: #1F1F1F;
+}
+header .main-content .white:hover {
+    color: #fff;
+    background-color: #1F1F1F;
+}
+header .main-content .white a:hover {
+    color: #fff;
+
+    background-color: #1F1F1F;
+}
+.container {
+    max-width: 1366px;
+    margin: 0 auto;
+    width: 100%;
+    /* Убедитесь, что ширина 100% */
+    padding: 0 72px;
+    /* Добавляем отступы слева и справа */
+
+}
+
+header {
+    display: flex;
+    min-height: 70vh;
+    position: relative;
+    /* Добавляем позиционирование для корректной работы z-index */
+    background-color: #E9DED4;
+    background-image: url('./assets/image_23.png'), url('./assets/Group 18.png');
+    /* Оба фоновых изображения */
+    background-size: cover, 1570px;
+    /* Размеры обоих изображений */
+    background-repeat: no-repeat;
+    background-position: center, center;
+    /* Позиции обоих изображений */
+    background-blend-mode: color-burn, normal;
+    /* Режимы смешивания для обоих изображений */
+    padding-top: 26px;
+}
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    /* Прозрачный фон для псевдоэлемента */
+    z-index: -1;
+    /* Помещаем псевдоэлемент под основной контент */
+}
+
+
+header .main-content {
+    padding-top: 62px;
+}
+
+header .main-content h1 {
+    width: 542px;
+    font-family: Merriweather;
+    font-size: 60px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 110%;
+    margin-bottom: 24px;
+    color: #313131;
+    position: relative;
+    /* Добавляем позиционирование для абсолютно позиционированных span */
+
+}
+
+header .main-content h1 .h-cen {
+    position: absolute;
+    left: 50%;
+    /* Перемещаем влево на 50% относительно родителя (h1) */
+    transform: translateX(-50%);
+    /* Центрируем относительно своей ширины */
+}
+
+header .main-content h1 .h-rig {
+    position: absolute;
+    right: 0;
+    /* Располагаем вправо относительно родителя (h1) */
+}
+
+header .main-content p {
+    width: 542px;
+    font-size: 18px;
+    font-family: "Golos Text";
+    font-weight: normal;
+    line-height: 130%;
+    margin-bottom: 40px;
+    color: #313131;
+    margin-top: 6%;
+    text-align: center;
+}
+
+header .main-content button {
+    font-size: 16px;
+    border: none;
+    border-radius: 66px;
+    cursor: pointer;
+    font-family: 'Golos Text', sans-serif;
+    padding: 20px 49px;
+    width: 263px;
+    line-height: 130%;
+    margin-right: 16px;
+}
+
+header .main-content .black {
+    color: white;
+    background-color: #1F1F1F;
+
+}
+
+header .main-content .white {
+    color: #1F1F1F;
+    background-color: transparent;
+    border: 2px solid #1F1F1F;
+}
+
+.main-content button p {
+    width: 270px;
+}
+
+header .main-content .white {
+    color: #1F1F1F;
+    background-color: transparent;
+    border: 2px solid #1F1F1F;
+}
+
+header .main-content button:hover {
+    background-color: #FBCE51;
+}
+
+header .main-content .white:hover {
+    color: #fff;
+    background-color: #1F1F1F;
+}
+
+
+
+/* Бегущая строка */
+.red-str {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 1.2em;
+    /* Высота строки, подстраивайте под необходимость */
+    line-height: 2.6em;
+    /* Высота строки, подстраивайте под необходимость */
+    white-space: nowrap;
+    background: #F54932;
+    font-family: Merriweather;
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+    font-weight: normal;
+    height: 60px;
+
+}
+
+.red-str p {
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+.red-str p span {
+    display: inline-block;
+    margin-right: 10px;
+    /* Расстояние между кругами, подстраивайте по необходимости */
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* 3 БЛОК */
+
+.thirty {
+    margin-top: 80px;
+}
+
+.thirty-blocks {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+}
+.mobile-block{
+    display: none;
+}
+.thirty .text {
+    font-family: Merriweather;
+    font-size: 36px;
+    text-transform: uppercase;
+    width: 764px;
+    flex: 1;
+    /* Растягиваем текст на всю доступную ширину */
+}
+
+.thirty .text span {
+    color: #F54932;
+    font-weight: bold;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.image p {
+    display: hidden;
+}
+
+
+/* 4 БЛОК */
+
+.table {
+    width: 100%;
+}
+
+.event-table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    /* объединение границ ячеек */
+}
+
+.event-table td {
+    padding: 16px 0;
+    /* Устанавливает отступы сверху и снизу в 16 пикселей */
+    vertical-align: middle;
+    border-top: 1px solid #ddd;
+    /* Граница между строками */
+    font-family: "Golos Text";
+    font-size: 20px;
+}
+
+.event-table td:first-child {
+    width: 290px;
+    font-weight: bold;
+    text-align: left;
+    border-left: none;
+    /* Убираем левую границу */
+    border-right: none;
+    /* Убираем правую границу */
+    font-weight: normal;
+    color: #313131;
+}
+
+.event-table td:last-child {
+    text-align: left;
+    /* Выровнено по левому краю */
+    border-left: 1px solid #ddd;
+    /* Убираем левую границу */
+    border-right: none;
+    /* Убираем правую границу */
+    font-weight: 600;
+    padding-left: 2%;
+}
+
+.event-table tr:first-child td {
+    border-top: none;
+    /* Убираем верхнюю границу первой строки */
+}
+
+.event-table s {
+    text-decoration-color: red;
+    /* Цвет зачеркнутой линии */
+    text-decoration-line: line-through;
+    /* Стиль зачеркивания */
+    color: inherit;
+    /* Наследование цвета текста */
+}
+
+
+.firty .text {
+    font-family: Merriweather;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 135%;
+    width: 704px;
+
+}
+
+.firty .text span {
+    color: #F54932;
+    font-weight: bold;
+
+}
+
+.firty .blue-text {
+    font-family: "Golos Text";
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057A2;
+}
+
+.firty .image {
+    top: 55px;
+    display: flex;
+    background-color: #fff;
+    position: relative;
+    background-image: url('./assets/dollar-bg.png'), url('./assets/dollar.png');
+    background-repeat: no-repeat;
+    background-blend-mode: color-burn, normal;
+    min-height: 60vh;
+    width: 530px;
+}
+
+.firty {
+    margin-top: 64px;
+}
+
+.firty .image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+.content-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.firty .image {
+    grid-area: a;
+}
+
+.firty .text {
+    grid-area: b;
+}
+
+.firty .table {
+    grid-area: c;
+}
+
+.firty .blue-text {
+    grid-area: d;
+}
+
+.firty-grid {
+    display: grid;
+    gap: 44px;
+    text-align: left;
+    grid-template-areas: "a a a a a a a b"
+        "a a a a a a a b"
+        "a a a a a a a c"
+        "a a a a a a a c"
+        "a a a a a a a d";
+    justify-content: center;
+}
+
+.text {
+    font-family: Merriweather, serif;
+    font-size: 36px;
+    text-transform: uppercase;
+    line-height: 135%;
+    margin: 20px 0;
+    color: #313131;
+}
+
+.text span {
+    color: #F54932;
+    font-weight: bold;
+}
+
+
+.blue-text {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057A2;
+}
+
+/* 5 БЛОК */
+.fifty {
+    margin-top: 200px;
+}
+
+.fifty .block {
+    background-color: #fff;
+    position: relative;
+    background-image:
+        url('./assets/bg-block.png'),
+        url('./assets/image_23.png');
+    /* Проверьте путь и имя файла */
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    background-position: center, center;
+    background-blend-mode: normal, multiply;
+    /* Убедитесь, что blending mode правильный */
+    width: 100%;
+    box-sizing: border-box;
+    /* Убедитесь, что padding учитывается */
+    display: flex;
+    align-items: flex-start;
+}
+
+.fifty .block::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+
+.seven .image {
+    display: block;
+}
+
+.fifty .one,
+.fifty .two,
+.fifty .three,
+.fifty .four,
+.fifty .five,
+.fifty .six {
+    width: 394px;
+    /* Установите ширину для всех блоков */
+}
+
+.fifty .one {
+    grid-area: a;
+}
+
+.fifty .two {
+    grid-area: b;
+}
+
+.fifty .three {
+    grid-area: c;
+}
+
+.fifty .four {
+    grid-area: e;
+}
+
+.fifty .five {
+    grid-area: f;
+}
+
+.fifty .six {
+    grid-area: g;
+}
+
+.fifty .seven {
+    grid-area: h;
+    width: 808px;
+}
+
+.grid-fifty {
+    margin-top: 54px;
+    display: grid;
+    justify-items: start;
+    text-align: left;
+    grid-template-areas:
+        "a a a b b b c c c"
+        "e e e f f f c c c"
+        "g g g h h h h h h";
+    gap: 20px;
+    /* Задает расстояние между блоками */
+
+}
+
+.fifty .numeric {
+    background-color: #fff;
+    max-width: fit-content;
+    margin: 20px 16px 0px 20px;
+    padding: 20px;
+    border-radius: 50%;
+    /* Делает элемент круглым */
+    display: flex;
+    /* Центрирование содержимого по вертикали и горизонтали */
+    align-items: center;
+    /* Центрирование содержимого по вертикали */
+    justify-content: center;
+    /* Центрирование содержимого по горизонтали */
+    width: 20px;
+    /* Установка фиксированной ширины */
+    height: 20px;
+    /* Установка фиксированной высоты */
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fifty .text p {
+    font-family: "Golos Text", sans-serif;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: #313131;
+    line-height: 120%;
+    text-align: left;
+}
+
+.title h1 {
+    font-family: Merriweather;
+    color: #313131;
+    font-size: 54px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 120%;
+}
+
+.fifty .title h1 span {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    line-height: 120%;
+    color: #3057A2;
+    display: inline-block;
+    text-transform: none;
+    margin-left: 18px;
+}
+
+.fifty .seven .text {
+    width: 446px;
+}
+
+.fifty .seven .image {
+    position: absolute;
+    right: -60px;
+    /* Позиционирование изображения справа */
+    top: -100px;
+    /* Позиционирование изображения сверху */
+}
+
+.fifty .mobile-only {
+    display: none;
+}
+
+.navigation {
+    display: none;
+}
+
+/* 6 БЛОК */
+
+.desktop-only .desktop-caros .carouselCounter {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Golos Text", sans-serif;
+    opacity: 60%;
+}
+
+.desktop-caros {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.six-section {
+    margin-top: 200px;
+}
+
+.six-blocks {
+    margin-top: 60px;
+    margin-bottom: 140px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.six-block {
+    min-width: 33.3333%;
+    /* Показываем три карточки за раз */
+    transition: transform 0.5s ease;
+}
+
+.six-main .title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.six-blocks .six-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.six-blocks .six-block .text h1 {
+    font-family: "Golos Text", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+    color: #313131;
+}
+
+.six-blocks .six-block .text p {
+    font-family: "Golos Text", sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 120%;
+    color: #313131;
+    opacity: 60%;
+}
+
+.six-blocks .six-block button {
+    background-color: #fff;
+    color: #3057A2;
+    border-color: #3057A2;
+    border-radius: 62px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Golos Text", sans-serif;
+}
+
+.carousel-controls {
+    display: flex;
+    align-items: center;
+}
+
+.carousel-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+}
+
+#carouselCounter {
+    margin: 0 10px;
+    font-family: "Golos Text", sans-serif;
+    font-size: 18px;
+    color: #313131;
+}
+
+.six-blocks .six-block button:hover {
+    background-color: #3057A2;
+    color: #fff;
+    border-color: #3057A2;
+    border-radius: 62px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Golos Text", sans-serif;
+}
+
+.desktop-only {
+    display: block;
+}
+
+.mobile-only {
+    display: none;
+}
+
+footer {
+    min-height: 15vh;
+    background: #E9DED4;
+}
+
+footer div p {
+    padding-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Golos Text", sans-serif;
+    opacity: 60%;
+}
+
+
+@media (max-width: 375px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    header {
+        min-height: 90vh;
+        background-image: url('./assets/image_23.png'), url('./assets/Group\ 8.png');
+        background-size: cover, auto;
+        background-position: 80% 105%;
+        background-blend-mode: color-burn, normal;
+    }
+    .main-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .red-str {
+        width: 100%;
+        line-height: 2.5em;
+        height: 38px;
+        font-size: 16px;
+    
+    }
+    header .main-content h1 {
+        font-family: Merriweather;
+        font-size: 36px;
+        width: 335px;
+        margin-bottom: 15%;
+    }
+
+    header .main-content p {
+        margin-bottom: 32px;
+        text-align: left;
+        width: 335px;
+    }
+
+    header .main-content button {
+        padding: 14px 43px;
+        width: 335px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    header .main-content .white {
+        color: #1F1F1F;
+        background-color: #fff;
+        border: 2px solid #fff;
+    }
+
+    .thirty-blocks {
+        flex-direction: column;
+        gap: 0;
+    }
+    .thirty-blocks .image img{
+        margin-bottom: 24px;
+    }
+
+    .thirty .text {
+        font-size: 28px;
+        width: 100%;
+        /* Ширина текста на всю доступную ширину */
+        text-align: left;
+        /* Центрируем текст по центру */
+    }
+
+    .thirty .text .mobile-hidden {
+        display: hidden;
+        opacity: 100%;
+    }
+
+    .firty-grid {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .firty .text {
+        font-size: 28px;
+        width: 375px;
+    }
+
+    .firty .image {
+        background-size: 330px;
+        min-height: 38vh;
+    }
+
+    .firty .blue-text {
+        font-size: 18px;
+    }
+
+
+    .event-table,
+    .event-table tr,
+    .event-table td {
+        display: block;
+        /* Устанавливаем блочный формат для таблицы и ее элементов */
+        width: 100%;
+        /* Устанавливаем ширину в 100% для всех элементов */
+    }
+
+    .event-table tr {
+        margin-bottom: 10px;
+        /* Добавляем отступ между строками */
+    }
+
+    .event-table td {
+        text-align: left;
+        /* Выровнено по левому краю */
+        padding: 8px 0;
+        /* Уменьшаем отступы для мобильного устройства */
+        border: none;
+        /* Убираем границы */
+        border-bottom: 1px solid #ddd;
+        /* Добавляем нижнюю границу для ячеек */
+        position: relative;
+        /* Для добавления псевдоэлементов */
+    }
+
+    .event-table td:first-child {
+        font-weight: none;
+        opacity: 70%;
+
+    }
+    .mobile-hidden{
+        display: none;
+    }
+    .mobile-block{
+        display: block;
+    }
+    .thirty .image {
+        font-family: Merriweather;
+        font-size: 28px;
+
+        text-transform: uppercase;
+        flex: 1;
+        /* Растягиваем текст на всю доступную ширину */
+    }
+    .thirty .image .last {
+        color: #F54932;
+        font-weight: bold;
+    }
+    .event-table td:last-child {
+        padding-left: 0;
+        /* Убираем отступ слева */
+        border-left: none;
+        color: #313131;
+    }
+
+    .event-table td::before {
+        content: attr(data-label);
+        /* Используем значение атрибута data-label */
+        font-weight: bold;
+        display: inline-block;
+    }
+
+    .title h1 {
+        font-size: 36px;
+        line-height: 110%;
+    }
+
+    .fifty .title h1 span {
+        margin-left: 0px;
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    .grid-fifty {
+        flex-wrap: wrap;
+        /* Возвращаем обычное поведение в больших экранах */
+    }
+
+    .block {
+        flex: 0 0 calc(50% - 20px);
+        /* Половина ширины на больших экранах с учетом отступов */
+        min-width: calc(50% - 20px);
+        margin-right: 20px;
+        /* Отступ между блоками */
+    }
+
+    .block:last-child {
+        margin-right: 0;
+        /* Убираем отступ у последнего блока в строке */
+    }
+
+    /* Основной стиль */
+    .fifty {
+        width: 100%;
+    }
+
+    .fifty .block {
+        width: 100%;
+        display: none;
+        /* Скрытие всех блоков по умолчанию */
+        padding: 0 20px 0 0;
+        /* Добавьте внутренний отступ */
+    }
+
+    .fifty .block.active {
+        display: flex;
+        /* Показать активные блоки */
+        flex-direction: row;
+        /* Вертикальное выравнивание содержимого */
+    }
+
+    .fifty .text {
+        width: 100%;
+    }
+
+    .fifty .text p {
+        font-size: 18px;
+        line-height: 120%;
+    }
+
+    .grid-fifty {
+        margin-top: 150px;
+        display: flex;
+        flex-direction: column;
+        /* Вертикальное выравнивание блоков */
+        gap: 0px;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        margin-top: 28px;
+    }
+
+    .navigation button {
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+    }
+
+    .navigation button img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .navigation .dots {
+        display: flex;
+        gap: 5px;
+        justify-content: center;
+    }
+
+    .navigation .dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #ccc;
+    }
+
+    .navigation .dot.active {
+        background-color: #3057A2;
+    }
+
+    .fifty .desktop-only {
+        display: none;
+    }
+
+    .fifty .mobile-only {
+        display: block;
+        position: absolute;
+        text-align: center;
+        z-index: 5;
+        top: 3190px;
+    }
+
+    .fifty .block {
+        padding: 0 10px;
+        /* Уменьшенный внутренний отступ для мобильной версии */
+    }
+
+    .fifty .one,
+    .fifty .three,
+    .fifty .four,
+    .fifty .six,
+    .fifty .seven {
+        padding-top: 62px;
+        /* Отступ сверху для первой карточки */
+    }
+
+    .fifty .three {
+        padding-bottom: 106px;
+    }
+
+    .fifty .two {
+        padding-bottom: 22px;
+    }
+
+    .fifty .five {
+        padding-bottom: 109px;
+    }
+
+    .fifty .six {
+        padding-bottom: 106px;
+    }
+
+    .fifty .seven {
+        padding-bottom: 62px;
+    }
+
+    .six-block {
+        flex: 0 0 calc(100% - 1px);
+        /* Устанавливаем ширину для одной карточки на мобильных устройствах */
+    }
+
+    .six-blocks .six-block button {
+        padding: 12px;
+    }
+
+    .title .desktop-only {
+        display: none;
+    }
+
+    .title .mobile-only {
+        display: block;
+    }
+
+    .text {
+        text-transform: none;
+    }
+
+    .mobile-only {
+        display: flex;
+    }
+
+    .carousel-controls .mobile-caros {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin-top: -80px;
+        gap: 20px;
+    }
+
+    .carouselCounter {
+        font-size: 16px;
+        font-weight: 500;
+        font-family: "Golos Text", sans-serif;
+        opacity: 60%;
+    }
+
+    .navigation-button button.disabled {
+        cursor: not-allowed;
+        opacity: 0.5;
+        /* Полупрозрачная кнопка для неактивного состояния */
+    }
+
+    
+    footer {
+        padding-bottom: 60px;
+    }
+}
